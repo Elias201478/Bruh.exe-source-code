@@ -627,7 +627,7 @@ VOID WINAPI bytebeat7()
 }
 
 DWORD WINAPI icon(LPVOID lpParam) {
-	// this is fucking stolen and told ai to use question icons :sob:
+	// this is fucking stolen form googol.exe and told ai to use question icons :sob:
 	HICON ico = LoadIcon(NULL, IDI_QUESTION);
 
 	V3 v[8] =
